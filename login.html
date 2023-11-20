@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Musings</title>
+    <link rel="shortcut icon" type="image" href="./images/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--CSS Links-->
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header class="header">
+
+        <a href="#" class="logo"><img src="images/logo.png" width="50px"> Sweet Mussings </a>
+
+          <nav class="navbar">
+            <ul>
+              <li><a href="restaurant.html#home"> Home <i class="fa fa-home"></i></a></li>
+              <li><a href="restaurant.html#about">About Us <i class="fa fa-users"></i></a></li>
+              <li>
+                <a href="restaurant.html#Menu">Menu <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="#Cakes">Cakes</a></li>
+                    <li><a href="#Designer Theme Cakes">Designer Theme Cakes</a></li>
+                    <li><a href="#Cupcakes">Cupcakes</a></li>
+                    <li><a href="#Fruit Cakes">Fruit Cakes</a></li>
+                    <li><a href="#Icecream Cakes">Icecream Cakes</a></li>
+                  </ul>
+                </div>
+              <li><a href="restaurant.html#Review"> Review <i class="fas fa-comment"></i></a></li>
+              <li><a href="Login.html">Login <i class="fa fa-user"></i></a></li>
+           </ul>
+          </nav>
+
+          <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="cart-btn" class="fas fa-shopping-cart"></div>
+          </div>
+
+    </header>
+
+    <section class="#logind" id="logind">
+      <div class="login">
+        <div class="row">
+          
+          <div class="col-1">
+            <div class="form-box">
+              <div class="form">
+                <form action="restaurant.html" class="login-form">
+                  <centre><h1 class="main-heading">Login Form</h1></centre>
+              <input type="text"placeholder="Username"/>
+              <input type="password"placeholder="Password"/>
+              <button>LOGIN</button>
+              <p class="message">Not Registered? <a href="#">Register</a></p>
+                </form>
+                <form action="Login.html" class="register-form">
+                  <centre><h1 class="main-heading">Register Form</h1></centre>
+              <input type="text" placeholder="Username"/>
+              <input type="text" placeholder="Email"/>
+              <input type="password" placeholder="Password"/>
+              <input type="password" placeholder="Confirm Password"/>
+              <button>REGISTER</button>
+              <p class="message">Already Registered? <a href="#">Login</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script>
+       $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"fast");});
+    </script>
+
+<section class="footer">
+  <div class="box-containers">
+    <div class="box1">
+      <h3>Quick Links</h3>
+      <a href="restaurant.html#home" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+      <a href="restaurant.html#about" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+      <a href="restaurant.html#Menu" class="links"> <i class="fas fa-arrow-right"></i> Menu </a>
+      <a href="restaurant.html#Review" class="links"> <i class="fas fa-arrow-right"></i> Review </a>
+      <a href="login.html" class="links"> <i class="fas fa-arrow-right"></i> Login </a>
+    </div>
+    <div class="box1">
+      <h3>Contact</h3>
+      <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i>23,Jalan Perpaduan,Ipoh,Perak </a>
+      <a href="#" class="links"> <i class="fas fa-phone"></i> +6012-3456-789 </a>
+      <a href="#" class="links"> <i class="fas fa-envelope"></i>SweetMussings123@gmail.com </a>
+    </div> 
+
+    <div class="box1">
+      <h3>Opening</h3>
+      <h4>Monday-Saturday</h4>
+      <p>9:00am-9:00pm</p>
+      <h4>Sunday</h4>
+      <p>10:00am-7:00pm</p>
+    </div>
+
+    <div class="box1">
+      <h3>Newsletter</h3>
+      <p>Subscribe For Latest Informations</p>
+      <form action="">
+      <input type="email" placeholder="Please enter your email">
+      <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <img src="images/payment.png" class="payment-img" alt="">
+    </div>
+  </div>
+    <div class="credit"> created by <span> Sweet Mussings Boss </span> | all rights reserved </div>
+</section>
+
+
+
+
+
+  <!--JS Link-->
+  <script src="/js/main.js"></script>
+    
+</body>
+</html>

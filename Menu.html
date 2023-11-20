@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Musings</title>
+    <link rel="shortcut icon" type="image" href="./images/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--CSS Links-->
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--Header Section-->
+    <header class="header">
+
+        <a href="#" class="logo"><img src="images/logo.png" width="50px"> Sweet Mussings </a>
+
+          <nav class="navbar">
+            <ul>
+              <li><a href="restaurant.html#home"> Home <i class="fa fa-home"></i></a></li>
+              <li><a href="restaurant.html#about">About Us <i class="fa fa-users"></i></a></li>
+              <li>
+                <a href="restaurant.html#Menu">Menu <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown">
+                  <ul>
+                    <li><a href="#Cakes">Cakes</a></li>
+                    <li><a href="#Designer Theme Cakes">Designer Theme Cakes</a></li>
+                    <li><a href="#Cupcakes">Cupcakes</a></li>
+                    <li><a href="#Fruit Cakes">Fruit Cakes</a></li>
+                    <li><a href="#Icecream Cakes">Icecream Cakes</a></li>
+                  </ul>
+                </div>
+              <li><a href="restaurant.html#Review"> Review <i class="fas fa-comment"></i></a></li>
+              <li><a href="Login.html">Login <i class="fa fa-user"></i></a></li>
+           </ul>
+          </nav>
+
+          <div class="icons">
+              <div id="menu-btn" class="fas fa-bars"></div>
+              <div id="cart-btn" class="fas fa-shopping-cart"></div>
+          </div>
+
+          <form action="#" id="shopping">
+
+            <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                  </div>      
+
+                  <nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+                    <div class="row">
+                        <div class="col">
+                          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+                          <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+                    </div>
+                  </nav>
+
+                  <div class="modal-body">
+                    <table class="show-cart table">  
+                    </table>
+                    <div class="price">
+                    <div>Total price: $<span class="total-cart"></span></div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <a href="Order Now.html" class="btn-bty">Order Now</a>
+                    <i class="fas fa-times" id="cart-close"></i>
+                  </div>
+                </div>
+              </div>
+            </div>   
+          </form>
+     
+    </header>
+
+    <section class="#Menu" id="menu">
+      <section class="#Cakes" id="Cakes">
+        <div class="menu-container">
+          <div class="bigtitle">Menu</div>
+          <div class="title">Cakes</div>
+        </div>
+        <div class="food-container">
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cak1.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>BLACK FOREST</h3>
+              <p>Moist chocolate cake base married with cocoa powder, complementing its crispy chocolate outer crumb.</p>
+              <a href="#" data-name="BLACK-FOREST" data-price="85.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM85.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cak2.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>BLUEBERRY CHEESECAKE</h3>
+              <p>Non-baked cheese cake topped with blueberry filling.</p>
+              <a href="#" data-name="BLUEBERRY-CHEESECAKE" data-price="76.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM76.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cak3.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>LOTUS BISCOFF VEGAN CAKE</h3>
+              <p>Fluffy cake layered with crunchy bits of Lotus Biscoff non-dairy cream and cookies.</p>
+              <a href="#" data-name="LOTUS-BISCOFF-VEGAN-CAKE" data-price="93.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM93.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cak4.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>RED VELVET CAKE</h3>
+              <p>A colorful cake with two red layers contrasted by a white cream cheese frosting.</p>
+              <a href="#" data-name="RED-VELVET-CAKE" data-price="69.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM69.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cak5.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>DAZZLING HEART</h3>
+              <p>Combination of Vanilla Chiffon,topped off with layers of chocolate ganache and strawberry filling</p>
+              <a href="#" data-name="DAZZLING-HEART" data-price="69.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM69.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cak6.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>SALTED CARAMEL CHEESE CAKE</h3>
+              <p>A classic baked cheesecake infused with the Lotus Biscoff caramel spread, garnished with Speculoos biscuit & crumbs.</p>
+              <a href="#" data-name="DAZZLING-HEART" data-price="75.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM75.90</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="#Designer Theme Cakes" id="Designer Theme Cakes">
+        <div class="menu-container">
+          <div class="title">Designer Theme Cakes</div>
+        </div>
+        <div class="food-container">
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/dc1.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>UNICORN CAKE</h3>
+              <p>Although unicorn is a mythical creature, there is nothing mythical about this cake because you can make it come true! </p>
+              <a href="#" data-name="UNICORN-CAKE" data-price="160.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM160.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/dc2.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>TUXEDO CAKE</h3>
+              <p>Surprise your Daddy on the occasion of Father's Day with our Tuxedo Cake. </p>
+              <a href="#" data-name="TUXEDO-CAKE" data-price="190.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM190.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/dc3.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>MIDNIGHT BLACK CAKE</h3>
+              <p>The colour contrast between white chocolate drip on the top and black buttercream base will leave you desiring.</p>
+              <a href="#" data-name="MIDNIGHT-BLACK-CAKE" data-price="160.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM160.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/dc4.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>PINK DROP STRAWBERRY CAKE</h3>
+              <p>The layers of strawberry compote guarantees a scrumptious burst of berry flavour. </p>
+              <a href="#" data-name="PINK-DROP-STRAWBERRY-CAKE" data-price="160.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM160.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/dc5.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>BLUE MERMAID CORAL CAKE</h3>
+              <p>This cake is covered with smooth and not-so-sweet buttercream and comes with Under the Sea creatures and mermaid tails. </p>
+              <a href="#" data-name="BLUE-MERMAID-CORAL-CAKE" data-price="190.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM190.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/dc6.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>ISABELLA FLORAL CAKE</h3>
+              <p>An arrangement of fresh flowers made from pink carnations and roses are placed on top of this cake,fit for a queen.</p>
+              <a href="#" data-name="ISABELLA-FLORAL-CAKE" data-price="160.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM160.00</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="#Cupcakes" id="Cupcakes">
+        <div class="menu-container">
+          <div class="title">Cupcakes</div>
+        </div>
+        <div class="food-container">
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cc2.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>KIDDIE CUPCAKES (6 PIECES)</h3>
+              <p>Add a sprinkle of colour to your kid's cake crave with these kiddie special cupcakes.</p>
+              <a href="#" data-name="KIDDIE-CUPCAKES" data-price="57.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM57.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cc2.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>SALTED CARAMEL CUPCAKES (6 PIECES)</h3>
+              <p>The range of topping from sour strips to fluffy marshmallows are great if you want to get children's attention as well as the adults!</p>
+              <a href="#" data-name="SALTED-CARAMEL-CUPCAKES" data-price="57.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM57.90</span>
+            </div>
+          </div> 
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cc3.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>CHOCOLATE LOVER CUPCAKES (6 PIECES)</h3>
+              <p>Made with the finest 70% dark chocolate - we promise, just one won't be enough.</p>
+              <a href="#" data-name="CHOCOLATE-LOVER-CUPCAKES" data-price="58.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM58.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cc4.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>VERY BERRIES CUPCAKES (6 PIECES)</h3>
+              <p>Here's a colorful storm of candies with these sweet treats.</p>
+              <a href="#" data-name="VERY-BERRIES-CUPCAKES" data-price="61.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM61.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cc5.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>RAINBOW MACARONS CUPCAKES (6 PIECES)</h3>
+              <p>mix flavors with Belgian Moist Chocolate, Vanilla Butter & Red Velvet (2pcs for each flavor)</p>
+              <a href="#" data-name="RAINBOW-MACARONS-CUPCAKES" data-price="72.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM72.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/cc6.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>FAIRYLAND CUPCAKES (6 PIECES)</h3>
+              <p>Whether it's a birthday, wedding, or afternoon coffee, it's always a pleasure to taste this deliciousness! Don't miss out!</p>
+              <a href="#" data-name="FAIRYLAND-CUPCAKES" data-price="57.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM57.90</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="#Fruit Cakes" id="Fruit Cakes">
+        <div class="menu-container">
+          <div class="title">Fruit Cakes</div>
+        </div>
+        <div class="food-container">
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/fc1.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>MANGO KING CAKE</h3>
+              <p>Layered with mango panna cotta and mango fruits filling for a great fruity punch.</p>
+              <a href="#" data-name="MANGO-KING-CAKE" data-price="76.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM76.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/fc2.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>LUSCIOUS LYCHEE</h3>
+              <p>In between the layers of goodness lies a luscious lychee filling that will tickle your taste buds in a good way.</p>
+              <a href="#" data-name="LUSCIOUS-LYCHEE" data-price="86.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM86.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/fc3.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>CUTIEBERRY CAKE</h3>
+              <p>This berry cake is layers of fluffy vanilla chiffon with strawberry filing and few pieces of delicate macaroons surround the cake.</p>
+              <a href="#" data-name="CUTIEBERRY-CAKE" data-price="78.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM78.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/fc4.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>BLUEBERRY FRUITY CAKE</h3>
+              <p>This deliciously blueberry fruity cake is made of soft vanilla chiffon layered with blueberry filling topped with fresh citrus and berry fruits.</p>
+              <a href="#" data-name="BLUEBERRY-FRUITY-CAKE" data-price="76.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM76.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/fc5.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>STRAWBERRY VEGAN CAKE</h3>
+              <p>The fluffy vanilla vegetarian cake topped with the juiciest strawberries and non-dairy cream will make you want to have more.</p>
+              <a href="#" data-name="STRAWBERRY-VEGAN-CAKE" data-price="93.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM93.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/fc6.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>MANGO CHEESECAKE</h3>
+              <p>Classic creamy cheesecake - layered with lush mango puree, and fresh fruits!</p>
+              <a href="#" data-name="MANGO-CHEESECAKE" data-price="82.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM82.90</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="#Icecream Cakes" id="Icecream Cakes">
+        <div class="menu-container">
+          <div class="title">Icecream Cakes</div>
+        </div>
+        <div class="food-container">
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/ic1.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>PERFECT 10</h3>
+              <p>When you want a bit of everything, the Perfect 10 ice cream cake is the ultimate choice. Cut into 10 perfect slices each with its individual flavors. </p>
+              <a href="#" data-name="PERFECT-10" data-price="94.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM94.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/ic2.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>INSIDE SCOOP SIGNATURE ICE CREAM CAKE</h3>
+              <p> This cake is coated in whipped cream and glazed with chocolate</p>
+              <a href="#" data-name="INSIDE-SCOOP-SIGNATURE-ICE-CREAM-CAKE" data-price="120.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM120.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/ic3.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>INSIDE SCOOP ROSE ICE CREAM CAKE</h3>
+              <p>Valrhona Chocolate and Vanilla Bean ice cream flavors alternate between layers of sponge cake.</p>
+              <a href="#" data-name="INSIDE-SCOOP-ROSE-ICE-CREAM-CAKE" data-price="113.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM113.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/ic4.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>INSIDE SCOOP ROCHER ICE CREAM CAKE</h3>
+              <p>Inside Scoop Rocher flavour ice cream is coated in milk chocolate mousse and glazed with milk chocolate and peanut chunks.</p>
+              <a href="#" data-name="INSIDE-SCOOP-ROCHER-ICE-CREAM-CAKE" data-price="140.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM140.00</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/ic5.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>SHAPE OF MY HEART</h3>
+              <p>Wanna show your love and affection? What better way to do that by gifting this sweet pink love shape ice cream cake.</p>
+              <a href="#" data-name="SHAPE-OF-MY-HEART" data-price="112.90" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM112.90</span>
+            </div>
+          </div>
+
+          <div class="menu">
+            <div class="food">
+              <img src="images/ic6.png" alt="" >
+            </div>
+            <div class="word">
+              <h3>INSIDE SCOOP BOMBE ALASKA ICE CREAM CAKE</h3>
+              <p>Durian and Valrhona Chocolate ice cream covered with lightly torched meringue on top of a crunchy peanut base.</p>
+              <a href="#" data-name="INSIDE-SCOOP-BOMBE-ALASKA-ICE-CREAM-CAKE" data-price="99.00" class="add-to-cart btn btn-primary">Add to cart</a>
+              <span class="price">RM99.00</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </section>
+
+    <section class="footer">
+      <div class="box-containers">
+        <div class="box1">
+          <h3>Quick Links</h3>
+          <a href="restaurant.html#home" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+          <a href="restaurant.html#about" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+          <a href="restaurant.html#Menu" class="links"> <i class="fas fa-arrow-right"></i> Menu </a>
+          <a href="restaurant.html#Review" class="links"> <i class="fas fa-arrow-right"></i> Review </a>
+          <a href="login.html" class="links"> <i class="fas fa-arrow-right"></i> Login </a>
+        </div>
+        <div class="box1">
+          <h3>Contact</h3>
+          <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i>23,Jalan Perpaduan,Ipoh,Perak </a>
+          <a href="#" class="links"> <i class="fas fa-phone"></i> +6012-3456-789 </a>
+          <a href="#" class="links"> <i class="fas fa-envelope"></i>SweetMussings123@gmail.com </a>
+        </div> 
+    
+        <div class="box1">
+          <h3>Opening</h3>
+          <h4>Monday-Saturday</h4>
+          <p>9:00am-9:00pm</p>
+          <h4>Sunday</h4>
+          <p>10:00am-7:00pm</p>
+        </div>
+    
+        <div class="box1">
+          <h3>Newsletter</h3>
+          <p>Subscribe For Latest Informations</p>
+          <form action="">
+          <input type="email" placeholder="Please enter your email">
+          <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <img src="images/payment.png" class="payment-img" alt="">
+        </div>
+      </div>
+        <div class="credit"> created by <span> Sweet Mussings Boss </span> | all rights reserved </div>
+    </section>
+    
+    
+    
+    
+    <!--JS Link-->
+    <script src="js/main.js"></script>
+    <script src="js/shopping.js"></script>
+
+</body>
+</html>

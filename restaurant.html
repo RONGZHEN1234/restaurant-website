@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Musings</title>
+    <link rel="shortcut icon" type="image" href="./images/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--CSS Links-->
+        <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <!--Header Section-->
+      <header class="header">
+
+          <a href="#" class="logo"><img src="images/logo.png" width="50px"> Sweet Mussings </a>
+
+            <nav class="navbar">
+              <ul>
+                <li><a href="#home"> Home <i class="fa fa-home"></i></a></li>
+                <li><a href="#about">About Us <i class="fa fa-users"></i></a></li>
+                <li>
+                  <a href="#Menu">Menu <i class="fas fa-caret-down"></i></a>
+                  <div class="dropdown">
+                    <ul>
+                      <li><a href="Menu.html#Cakes">Cakes</a></li>
+                      <li><a href="Menu.html#Designer Theme Cakes">Designer Theme Cakes</a></li>
+                      <li><a href="Menu.html#Cupcakes">Cupcakes</a></li>
+                      <li><a href="Menu.html#Fruit Cakes">Fruit Cakes</a></li>
+                      <li><a href="Menu.html#Icecream Cakes">Icecream Cakes</a></li>
+                    </ul>
+                  </div>
+                <li><a href="#Review"> Review <i class="fas fa-comment"></i></a></li>
+                <li><a href="Login.html">Login <i class="fa fa-user"></i></a></li>
+             </ul>
+            </nav>
+
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars"></div>
+                <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            </div>
+  
+      </header>
+
+<!--home section -->
+
+<section class="home" id="home">
+  <div class="slides-container">
+
+      <div class="slide active">
+          <div class="content">
+            <h2>Delicious Cake</h2>
+            <h2>At Sweet Mussings</h2>
+            <h3>Category<span> Cakes</span></h3>
+              <a href="Menu.html#Cakes" class="btn">Shop Now</a>
+          </div>
+          <div class="img">
+              <img src="images/background.png" alt="">
+          </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <h2>Delicious Cake</h2>
+          <h2>At Sweet Mussings</h2>
+          <h3>Category<span>Designer Theme Cakes</span></h3>
+            <a href="Menu.html#Designer Theme Cakes" class="btn">Shop Now</a>
+        </div>
+        <div class="img">
+            <img src="images/designer cakes.png" alt="">
+        </div>
+    </div>
+
+      <div class="slide">
+          <div class="content">
+            <h2>Delicious Cake</h2>
+            <h2>At Sweet Mussings</h2>
+            <h3>Category<span> Cupcakes</span></h3>
+              <a href="Menu.html#Cupcakes" class="btn">Shop Now</a>
+          </div>
+          <div class="img">
+              <img src="images/cat-1.jpg" width="50px">
+          </div>
+      </div>
+
+      <div class="slide">
+          <div class="content">
+            <h2>Delicious Cake</h2>
+            <h2>At Sweet Mussings</h2>
+            <h3>Category<span> Fruit Cakes</span></h3>
+              <a href="Menu.html#Fruit Cakes" class="btn">Shop Now</a>
+          </div>
+          <div class="img">
+              <img src="images/box3.jpg" alt="">
+          </div>
+      </div>
+
+      <div class="slide">
+        <div class="content">
+          <h2>Delicious Cake</h2>
+          <h2>At Sweet Mussings</h2>
+          <h3>Category<span> Icecream Cakes</span></h3>
+            <a href="Menu.html#Icecream Cakes" class="btn">Shop Now</a>
+        </div>
+        <div class="img">
+            <img src="images/icecreamm cake.png" alt="">
+        </div>
+    </div>
+
+  </div>
+  <div id="next-slide" class="fas fa-angle-right" onclick="next()"></div>
+  <div id="prev-slide" class="fas fa-angle-left" onclick="next()"></div>
+</section>
+
+<section class="info-container">
+
+  <div class="info">
+      <img src="images/delivary.png" alt="">
+      <div class="content">
+          <h3>Free Delivery</h3>
+          <span>With Minimum Purchase</span>
+      </div>
+  </div>
+
+  <div class="info">
+      <img src="images/affortable price.png"  alt="">
+      <div class="content">
+          <h3>Affordable Price</h3>
+          <span>Make you Happy!</span>
+      </div>
+  </div>
+
+  <div class="info">
+      <img src="images/easy payment.png" alt="">
+      <div class="content">
+          <h3>Easy Payments</h3>
+          <span>Cash or Credit</span>
+      </div>
+  </div>
+
+</section>
+
+<div class="banner">
+  <div class="content">
+    <h1>Delicious Cake</h1>
+    <h2>UPTO 50% OFF</h2>
+    <a href="#Menu" class="btn">Order Now</a>
+    </div>
+    <div class="img">
+      <img src="images/banner-background.png" alt="">
+    </div>
+  </div>
+
+  <div class="about" id="about">
+    <h1>ABOUT US</h1>
+    <div class="card">
+      <img src="images/about.png" alt="">
+    </div>
+    <div class="text-box">
+      <h4>Sweet Mussings is a sweet local family owned bakery located in Ipoh,Perak.  We pride ourselves with delivering the sweetest treats and cakes to you! </h4>
+      <h4>All of our cakes and treats are made fresh from scratch with every order. Nothing is ever frozen and we use all natural ingredients.  Great care is taken with each and every order, and decorated to impress.</h4>
+      <h4>We strive to set new trends and are constantly inspired by our customer's creativity!  We promise to leave you satisfied and full of happiness with every bite!</h4>
+    </div>
+
+<section class="#Menu" id="Menu">
+  <h1>Menu</h1>
+  <div class="Category">
+    <div class="box3">
+      <img src="images/cakes images.png" alt="">
+      <h2>Cakes</h2>
+      <a href="Menu.html#Cakes" class="btn">View All</a> 
+    </div>
+
+    <div class="box3">
+      <img src="images/designer cakes image.png" alt="">
+      <h2>Designer Theme Cakes</h2>
+      <a href="Menu.html#Designer Theme Cakes" class="btn">View All</a> 
+    </div>
+
+    <div class="box3">
+      <img src="images/cupcake image.png" alt="">
+      <h2>Cupcakes</h2>
+      <a href="Menu.html#Cupcakes" class="btn">View All</a> 
+    </div>
+
+    <div class="box3">
+      <img src="images/fruitcake image.png" alt="">
+      <h2>Fruit Cakes</h2>
+      <a href="Menu.html#Fruit Cakes" class="btn">View All</a> 
+    </div>
+
+    <div class="box3">
+      <img src="images/ice cream cake image.png" alt="">
+      <h2>Icecream Cakes</h2>
+      <a href="Menu.html#Icecream Cakes" class="btn">View All</a> 
+    </div>
+  </div>
+
+</section>
+
+<section class="Review" id="Review">
+  <h1>Review</h1>
+  <div class="box-container">
+
+    <div class="boxs">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p>Worth the price, very delicious and not too sweet, full of birdnest, reasonable price compare to other brand. Very fresh, they cook at the same day which make me impressed!</p>
+      <div class="user">
+        <img src="images/cus-1.png" alt="">
+        <div class="user-info">
+          <h3>Oliva</h3>
+          <span>Hope our cake can make you a day!</span>
+        </div>
+      </div>
+      <i class="fas fa-quote-right"></i>
+    </div>
+
+    <div class="boxs">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half"></i>
+      </div>
+      <p>The cake was ok, but maybe a little bit too sweet for me.</p>
+      <div class="user">
+        <img src="images/cus-2.png" alt="">
+        <div class="user-info">
+          <h3>Johnsen</h3>
+          <span>Sorry customer.Next time you can remark for the sweetness!</span>
+        </div>
+      </div>
+      <span class="fas fa-quote-right"></span>
+    </div>
+
+    <div class="boxs">
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p>Bought it for my daughter's birthday and she enjoyed it. We're not big cake-eaters as a family, and the fact that this cake was finished within the day is a testament to the cake's deliciousness. The cream used was not overpowering and overall sweetness was well balanced. Would buy again.</p>
+      <div class="user">
+        <img src="images/cus-3.png" alt="">
+        <div class="user-info">
+          <h3>Emma</h3>
+          <span>We're happy to see you!</span>
+        </div>
+      </div>
+      <span class="fas fa-quote-right"></span>
+    </div>
+  </div>
+</section>
+
+<section class="footer">
+  <div class="box-containers">
+    <div class="box1">
+      <h3>Quick Links</h3>
+      <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+      <a href="#about" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+      <a href="#Menu" class="links"> <i class="fas fa-arrow-right"></i> Menu </a>
+      <a href="#Review" class="links"> <i class="fas fa-arrow-right"></i> Review </a>
+      <a href="login.html" class="links"> <i class="fas fa-arrow-right"></i> Login </a>
+    </div>
+    <div class="box1">
+      <h3>Contact</h3>
+      <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i>23,Jalan Perpaduan,Ipoh,Perak </a>
+      <a href="#" class="links"> <i class="fas fa-phone"></i> +6012-3456-789 </a>
+      <a href="#" class="links"> <i class="fas fa-envelope"></i>SweetMussings123@gmail.com </a>
+    </div> 
+
+    <div class="box1">
+      <h3>Opening</h3>
+      <h4>Monday-Saturday</h4>
+      <p>9:00am-9:00pm</p>
+      <h4>Sunday</h4>
+      <p>10:00am-7:00pm</p>
+    </div>
+
+    <div class="box1">
+      <h3>Newsletter</h3>
+      <p>Subscribe For Latest Informations</p>
+      <form action="">
+      <input type="email" placeholder="Please enter your email">
+      <button type="submit" class="btn">Subscribe</button>
+      </form>
+      <img src="images/payment.png" class="payment-img" alt="">
+    </div>
+  </div>
+    <div class="credit"> created by <span> Sweet Mussings Boss </span> | all rights reserved </div>
+</section>
+
+
+
+
+
+<!--JS Link-->
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
